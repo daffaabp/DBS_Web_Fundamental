@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flex Wrap</title>
+</head>
+
+<style>
+   .box {
+      width: 200px;
+      height: 100px;
+
+      margin-bottom: 8px;
+   }
+
+   .box:nth-child(odd) {
+      background-color: salmon;
+   }
+
+   .box:nth-child(even) {
+      background-color: lime;
+   }
+
+   .flex {
+      display: flex;
+
+      /* Silakan coba seluruh nilainya */
+      flex-wrap: nowrap;
+      /* flex-wrap: wrap; */
+      /* flex-wrap: wrap-reverse; */
+   }
+</style>
+
+<body>
+   <main>
+      <div class="flex">
+         <div class="box">1</div>
+         <div class="box">2</div>
+         <div class="box">3</div>
+         <div class="box">4</div>
+         <div class="box">5</div>
+      </div>
+   </main>
+
+   <!-- Berikut adalah penjelasan setiap value dari properti flex-wrap.
+
+   nowrap: seluruh flex items hanya akan ditempatkan dalam satu baris meskipun sangat banyak jumlahnya.
+   wrap: nilai ini menyebabkan flex items akan diletakkan ke baris yang baru (berikutnya) sehingga menjadi multiple
+   lines.
+   wrap-reverse: meskipun mirip dengan wrap, nilai ini akan menyebabkan beberapa flex items ditempatkan dengan
+   menambahkan baris sebelumnya. -->
+</body>
+
+</html>

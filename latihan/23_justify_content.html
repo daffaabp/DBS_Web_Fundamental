@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Justify Content</title>
+</head>
+
+<style>
+   .box {
+      width: 100px;
+      height: 100px;
+   }
+
+   .box:nth-child(odd) {
+      background-color: salmon;
+   }
+
+   .box:nth-child(even) {
+      background-color: lime;
+   }
+
+   .flex {
+      display: flex;
+
+      /* Silakan coba seluruh nilainya */
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+      justify-content: space-evenly;
+   }
+</style>
+
+<body>
+   <main>
+      <div class="flex">
+         <div class="box">1</div>
+         <div class="box">2</div>
+         <div class="box">3</div>
+      </div>
+   </main>
+
+   <!-- Berikut adalah penjelasan setiap value dari properti justify-content.
+
+   Flex-start: peletakan child element akan dimulai dari main-start.
+   Flex-end: peletakan child element dimulai dari main-end.
+   Center: child element akan diletakkan di tengah parent child.
+   Space-between: child element akan tersusun secara merata, elemen pertama berada di tepi main-start dan elemen kedua
+   berada di tepi main-end. Jika child element lebih dari dua, elemen lainnya akan didistribusikan berada di tengah
+   dengan jarak yang sama.
+   Space-around: setiap child element akan memiliki panjang celah yang sama pada sisi horizontal.
+   Space-evenly: setiap child element akan memiliki jarak yang setara, termasuk jarak ke tepi main-start dan main-end. -->
+</body>
+
+</html>

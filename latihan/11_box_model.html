@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box Model</title>
+</head>
+
+<style>
+   /* .box {
+      border: 4px dashed #00a2c6;
+      width: 200px;
+   }
+
+   /* Box Model Padding */
+   /* p {
+      border: 4px solid #00a2c6;
+      width: 350px;
+   }
+
+   p.example {
+      padding: 10px;
+   } */
+
+   /* Centering Content */
+   .box {
+      width: 50%;
+      border: 4px solid darkblue;
+      padding: 20px;
+      margin-bottom: 20px;
+   }
+
+   .box.center {
+      margin: 0 auto;
+   }
+</style>
+
+<body>
+   <!-- Content -->
+   <!-- Content atau konten merupakan sebuah inti dari kotak elemen yang merupakan konten dari elemen itu sendiri. -->
+
+   <!-- Padding -->
+   <!-- Area yang menjadi jarak antara border elemen dengan konten yang ditampilkan. Ketika kita menerapkan background-color, warna tersebut diterapkan pada area padding. Penerapan ukuran padding pada elemen adalah opsional. -->
+
+   <!-- Border -->
+   <!-- Border merupakan garis yang mencakup konten beserta padding. Penerapan border pada elemen adalah opsional. -->
+
+   <!-- Margin -->
+   <!-- Berbeda dengan padding, margin merupakan area jarak di luar border. Pada ilustrasi di atas, margin ditunjukkan dengan warna merah muda. Namun, pada aslinya margin selalu transparan dan penerapan margin pada elemen adalah opsional. -->
+
+   <!-- Edge of Element -->
+   <!-- Edge of element merupakan batas dari suatu elemen. Di dalamnya terdapat margin, border, padding, dan konten. -->
+
+   <!-- Border merupakan sebuah garis yang mengelilingi area konten dan padding (opsional). Kita bisa mengatur tipe, ketebalan, serta warna garis yang ditampilkan sesuai dengan yang kita inginkan. -->
+
+   <!-- <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> -->
+
+   <!-- Box Model Padding -->
+   <!-- <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae commodi
+      dignissimos eaque fugiat inventore maiores neque nisi sint.
+   </p>
+   <p class="example">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda blanditiis cum
+      dignissimos enim esse excepturi illum inventore maiores minima, nemo nisi obcaecati officia
+      pariatur qui quibusdam sed. Ab, dolorum?
+   </p> -->
+
+   <!-- Centering Content -->
+   <div class="box">
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+         autem commodi dignissimos dolores ea, eaque, earum esse harum illo in
+         incidunt molestias nam non qui recusandae sunt ullam veniam vero!
+      </p>
+   </div>
+
+   <div class="box center">
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea,
+         id. Aliquid consectetur dolorum exercitationem ipsam, necessitatibus
+         nostrum pariatur sunt! Accusantium architecto at dolorem itaque quisquam
+         quod soluta sunt voluptatum.
+      </p>
+   </div>
+</body>
+
+</html>
