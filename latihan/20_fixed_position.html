@@ -13,7 +13,7 @@
       background-color: #aaaaaa;
       margin: 0;
       width: 100%;
-   } 
+   }
 
    .fixed {
       position: fixed;
@@ -47,6 +47,36 @@
       placeat quod ratione repellat veritatis! A culpa cumque, delectus distinctio ducimus earum et
       ex quas quia quis tempore temporibus veritatis voluptates. Delectus doloremque mollitia nobis?
    </p>
+
+   <!-- Flexible box layout adalah model layout satu dimensi guna menyusun elemen-elemen (flex items) dalam posisi rows atau
+   columns. Hal ini membuat flexbox disebut dengan direction-agnostic atau mengatur tata letak di banyak arah. Hal
+   menarik dari flexbox adalah ia menawarkan penyusunan layout dengan fleksibel karena flex container atau flexbox dapat
+   mengatur dimensi setiap flex-items (child element) sehingga layout yang diinginkan dapat tercapai dengan mudah. -->
+
+   <!-- Flex container memperluas flex items untuk mengisi ruang kosong atau menciutkannya sehingga menghindari overflow
+   (dimensi child element yang keluar dari parent element-nya). Dengan hadirnya flexbox, perancangan layout dalam skala
+   yang kecil dapat dilakukan dengan mudah pada halaman web. -->
+
+   <!-- Flex container adalah parent element dari seluruh flex items, sedangkan flex items adalah elemen yang secara langsung
+   merupakan child dari parent element. -->
+
+   <!-- Pada asalnya, flex items akan dijajarkan secara horizontal (row), yaitu dimulai dari main-start ke main-end (main
+   axis). Namun, jangan khawatir, kita bisa mengubahnya menggunakan properti yang memiliki peran tersebut. Kita akan
+   mempelajarinya dalam materi mendatang.
+
+   Main axis: main axis dari flex container adalah arah sumbu utama untuk flex item dijajarkan atau ditata. Perlu
+   diingat, arah dari main axis tidak selalu horizontal. Hal ini bergantung terhadap value dari properti flex-direction.
+
+   Main-start | main-end: flex item akan ditempatkan dalam flex container yang berawal dari main-start dan main-end.
+   Main size: lebar atau tinggi dari flex item yang diposisikan pada sumbu utama (main axis).
+
+   Cross axis: sumbu yang arahnya tegak lurus dengan main axis. Biasanya ini terjadi ketika flexbox menerapkan value
+   wrap pada properti flex-wrap sehingga susunan layout terlihat dua dimensi.
+
+   Cross-start | cross-end: flex item yang memenuhi ruang kosong flex container secara vertikal, mulai dari cross-start
+   hingga cross end. Hal ini dapat kita atur menggunakan properti align-items, align-self, dan align-content.
+   
+   Cross size: lebar atau tinggi dari sebuah flex item yang ditempatkan pada dimensi cross. -->
 </body>
 
 </html>
